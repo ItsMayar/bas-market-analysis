@@ -1,21 +1,27 @@
 # BAS Market Landscape Analysis
 
-A small Python analysis of the Saudi/GCC business development, training and freelance ecosystem, done to support BAS Innovations' positioning.
+A small Python analysis of the Saudi/GCC market for business development, training and freelancing. I did it while working on BAS Innovations' positioning, to see where BAS could stand out.
 
-**About the data:** `landscape.csv` is built from desk research on seven players (Marn, Ureed, Freelance Yard / Shift, Jadah 30, HUB1006, traditional consulting, and BAS). Each capability is scored 1 (clearly offered), 0.5 (partial or emerging) or 0 (not a focus). These scores are my own judgements from public descriptions, not measured data, and the sample is small, so the results are directional only.
+## The data
+I researched six players from their public descriptions: Marn, Ureed, Freelance Yard / Shift, Jadah 30, HUB1006 and traditional consulting firms. Then I added BAS's planned services for comparison. For each one, I scored five capabilities: growth strategy, training, freelancer marketplace, managed services, and AI/data positioning. 1 means clearly offered, 0.5 means partly, and 0 means not a focus.
 
-## What it does
-- Calculates how many players cover each capability and what share of the market that is
+These scores are my own judgement, not measured data. The sample is small, and I didn't check every player's website in depth.
+
+## What the code does
+- Counts how many players cover each capability
 - Counts how many capabilities each player combines
-- Produces `landscape_heatmap.png` and `gap_summary.csv`
+- Draws a heatmap (`landscape_heatmap.png`) and saves a summary (`gap_summary.csv`)
 
-## Run
+## Run it
+```
 pip install pandas matplotlib
 python analyze.py
+```
 
-## Findings
-- Freelancer marketplaces are the most crowded area (3 of 6 players). AI/data-led positioning is the least covered: no player leads with it, and only one is partial.
-- No player combines more than 2 of the 5 capabilities, while BAS plans to combine 4. That combination is the main differentiator.
+## What I found
+- Freelancer marketplaces are the most crowded area, with 3 of the 6 players.
+- Nobody leads with AI or data. Only Marn comes close, with its AI skill assessment.
+- No competitor covers more than 2 of the 5 capabilities. BAS plans to cover 4.
 
 ## Limits
-Seven players is a small sample, the scoring is subjective, and the list is not exhaustive. A next step would be to add more players and verify each score against the player's own materials.
+Only a few players, subjective scoring, and the list isn't complete. Next, I'd add more players and check each score against the company's own materials.
